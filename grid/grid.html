@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        #p1:hover + #parent{
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        #p1 {
+            background-color: grey;
+            width: 150px;
+            height: 30px;
+            padding-top: 10px;
+            padding-left: 10px;
+            margin-left: 550px;
+            margin-top: 30px;
+        }
+        /* @media screen and (min-width:20px)and(max-width:1000px) {
+            body{
+
+            }
+        } */
+
+        #parent{
+            /* background-color: aqua; */
+            margin-left: 25px;
+            width: 1200px;
+            height:1800px;
+            display: grid;
+            grid-template-columns:400px 400px 400px;
+            grid-template-rows:250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px 250px;
+           
+        }
+        footer{
+            margin-left: 25px;
+            width: 1200px;
+            height: 150px;
+            background-color:#f3f0f0;
+        }
+        footer p{
+            text-align: center;
+            padding-top: 60px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">PHOTOLIO</h1>
+    <p style="text-align: center;">A template made by w3.css for photographers.</p>
+    <p id="p1">Toggle Grid Padding</p>
+    <div id="parent">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" width=400px height="100%" style="grid-row:1/3 ;">
+        <img src="https://www.w3schools.com/w3images/coffee.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/mist.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/bridge.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/workbench.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/notebook.jpg" width=400px height="100%" style="grid-row:2/4;">
+        <img src="https://www.w3schools.com/w3images/gondol.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/sound.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/london.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/skies.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/woods.jpg" width=400px height="100%" style="grid-row: 6/8;">
+        <img src="https://www.w3schools.com/w3images/rocks.jpg" width=400px height="100%" style="grid-row: 5/7;">
+        <img src="https://www.w3schools.com/w3images/rock.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/lights.jpg" width=400px height="100%">
+        <img src="https://www.w3schools.com/w3images/nature.jpg" width=400px height="100%" style="grid-row:6/8;">
+        <img src="https://www.w3schools.com/w3images/avatar_g.jpg" width=400px height="100%" style="grid-row: 7/8;">
+
+    </div>
+    <footer>
+    
+     <p>Powered by W3.CSS</p>
+
+    </footer>
+
+</body>
+
+
+
+
+</html>
